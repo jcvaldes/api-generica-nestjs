@@ -1,0 +1,46 @@
+### Create Persona
+POST http://localhost:3000/api/personas/save
+Content-Type: application/json
+
+{
+    "nombre": "Juan2",
+    "apellido": "Perez2",
+    "direccion": "lalala 2209",
+    "telefono": "123456789"
+}
+
+### Update Persona
+POST http://localhost:3000/api/personas/save
+Content-Type: application/json
+
+{
+    "id": 1,
+    "nombre": "Juan",
+    "apellido": "Perez2",
+    "direccion": "lalala 2209",
+    "telefono": "123456789"
+}
+
+### Update Persona
+PUT http://localhost:3000/api/personas/update/1
+Content-Type: application/json
+
+{
+    "nombre": "Juan5",
+    "apellido": "Perez5",
+    "direccion": "lalala 2209",
+    "telefono": "123456789"
+}
+
+### Update Persona
+GET http://localhost:3000/api/personas/all
+
+### FindOne Persona
+GET http://localhost:3000/api/personas/find/22
+
+
+### Delete Persona
+DELETE http://localhost:3000/api/personas/delete/2
+
+### Count Personas
+GET http://localhost:3000/api/personas/count
